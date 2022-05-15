@@ -1,0 +1,155 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 3.6rem 1.25rem;
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 31vh;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: 100% 59.5vh;
+  }
+}
+
+.card {
+  margin: 0 auto;
+  border-radius: .625rem;
+  text-align: center;
+  background-color: #f5f7ff;
+  max-width: 20.95rem;
+}
+
+.card__hero-img {
+  border-radius: .625rem .625rem 0rem 0rem;
+  width: 100%;
+}
+
+.card__heading {
+  font-weight: 900;
+  font-size: 22.8px;
+  margin: 1.5rem 1rem 1rem;
+}
+
+.card__text {
+  color: #7280a7;
+  font-size: .9625rem;
+  font-weight: 500;
+  padding: 0 2.5rem;
+  line-height: 1.5;
+}
+
+.card__subscription {
+  border-radius: .625rem;
+  padding: 1rem;
+  background-color: #f0f4ff;
+  margin: 1.5rem 1.6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+
+.card__subscription a {
+  font-size: .6875rem;
+  font-weight: 700;
+  color: #3829e0;
+}
+
+.card__subscription a:hover {
+  color: #6e63e9;
+  text-decoration: none;
+}
+
+.card__music-img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.card .card__plan {
+  margin-right: 3rem;
+}
+
+.card .card__plan--bold {
+  font-weight: 900;
+  font-size: .8125rem;
+}
+
+.card .card__plan--light {
+  font-weight: 500;
+  font-size: .8125rem;
+  color: #7280a7;
+}
+
+.card .card__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card__cta-payment {
+  font-size: .875rem;
+  font-weight: 700;
+  margin: 1.5rem 1.6rem 1.6rem;
+  padding: 0.8rem 0.6rem;
+  border-radius: .625rem;
+  background-color: #3829e0;
+  color: #f5f7ff;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 10px 40px 4px rgba(114, 128, 167, 0.46);
+          box-shadow: 0px 10px 40px 4px rgba(114, 128, 167, 0.46);
+}
+
+.card .card__cta-payment:hover {
+  background-color: #6e63e9;
+}
+
+.card .card__cta-cancel {
+  color: #7280a7;
+  text-decoration: none;
+  font-size: .8625rem;
+  font-weight: 700;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1.6rem;
+}
+
+.card .card__cta-cancel:hover {
+  color: #000;
+}
+
+.attribution {
+  font-size: .8125rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.attribution a {
+  color: #3829e0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #6e63e9;
+}
+/*# sourceMappingURL=styles.css.map */

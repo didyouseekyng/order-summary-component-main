@@ -1,0 +1,140 @@
+$colors: (pale-blue: hsl(225,100%,94%), bright-blue: hsl(245,75%,52%), v-paleblue: hsl(225,100%,98%), ds-blue: hsl(224,23%,55%), dark-blue: hsl(223,47%,23%), light-paleblue: hsl(225,100%,97%), hover-blue: hsl(245,75%,65%));
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 3.6rem 1.25rem;
+    background-color: map-get($colors, pale-blue);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 31vh;
+    background-attachment: fixed;
+
+    @media screen and (min-width:48rem) {
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-size: 100% 59.5vh;
+    }
+}
+
+.card{
+    margin: 0 auto;
+    border-radius: .625rem;
+    text-align: center;
+    background-color: map-get($colors, v-paleblue);
+    max-width: 20.95rem;
+
+    &__hero-img{
+        border-radius: .625rem .625rem 0rem 0rem;
+        width: 100%;
+    }
+    
+    &__heading{
+        font-weight: 900;
+        font-size: 22.8px;
+        margin: 1.5rem 1rem 1rem;
+    }
+
+    &__text{
+        color: map-get($colors, ds-blue);
+        font-size: .9625rem;
+        font-weight: 500;
+        padding: 0 2.5rem;
+        line-height: 1.5;
+    }
+
+    &__subscription{
+        border-radius: .625rem;
+        padding: 1rem;
+        background-color: map-get($colors, light-paleblue);
+        margin: 1.5rem 1.6rem 0;
+        display: flex;
+        align-items: center; 
+        gap: 1.25rem;   
+
+        a{
+            font-size: .6875rem;
+            font-weight: 700;
+            color: map-get($colors, bright-blue);
+        }
+
+        a:hover{
+            color: map-get($colors,hover-blue);
+            text-decoration: none;
+        }
+    }
+
+    &__music-img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+.card__plan{
+    margin-right: 3rem;
+    &--bold{
+        font-weight: 900;
+        font-size: .8125rem;
+    }
+
+    &--light{
+        font-weight: 500;
+        font-size: .8125rem;
+        color: map-get($colors, ds-blue);
+    }
+}
+
+.card__cta{
+    display: flex;
+    flex-direction: column;
+
+
+    &-payment{
+        font-size: .875rem;
+        font-weight: 700;
+        margin: 1.5rem 1.6rem 1.6rem;
+        padding: 0.8rem 0.6rem;
+        border-radius: .625rem;
+        background-color: map-get($colors,bright-blue);
+        color: map-get($colors,v-paleblue);
+        text-decoration: none;
+        box-shadow: 0px 10px 40px 4px rgba(114,128,167,0.46);
+    }
+
+    &-payment:hover{
+        background-color: map-get($colors, hover-blue);
+    }
+
+    &-cancel{
+        color: map-get($colors,ds-blue);
+        text-decoration: none;
+        font-size: .8625rem;
+        font-weight: 700;
+        align-self: center;
+        margin-bottom: 1.6rem;
+    }
+
+    &-cancel:hover{
+        color: #000;
+    }
+}
+}
+
+.attribution{
+    font-size: .8125rem;
+    text-align: center;
+    padding-top: 1rem;
+    
+    a{
+        color: map-get($colors, bright-blue);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: map-get($colors,hover-blue);
+    }
+}
